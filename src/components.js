@@ -1,3 +1,4 @@
+import List, {ListBlock} from './components/List.js';
 import Collapse, {CollapseBlock} from './components/Collapse';
 import Dropdown, {DropDownBlock} from './components/Dropdown';
 import TabsNavigation, {TabsBlock} from "./components/tabs/TabsNavigation";
@@ -36,6 +37,7 @@ import Default from "./components/Default";
 
 export default (editor, config = {}) => {
   const c = config;
+  
   const domc = editor.DomComponents;
   const blocks = c.blocks;
   const bm = editor.BlockManager;
@@ -107,13 +109,13 @@ export default (editor, config = {}) => {
     }
 
     // Basic
-    /*if (blocks.list) {
+    if (blocks.list) {
       ListBlock(bm, c.labels.list)
       List(domc);
-    }*/
+    }
 
-    /*if (blocks.description_list) {
-    }*/
+    // if (blocks.description_list) {
+    // }
 
   }
 

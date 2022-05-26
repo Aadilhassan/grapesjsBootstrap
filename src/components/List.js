@@ -2,7 +2,7 @@ export const ListBlock = (bm, label) => {
     bm.add('list', {
         label: label,
         category: 'Basic',
-        attributes: {class:'fa fa-list'},
+        attributes: {class: 'fa fa-list'},
         content: {
             type: 'list'
         }
@@ -34,8 +34,8 @@ export default (domc) => {
                 ].concat(defaultModel.prototype.defaults.traits)
             })
         }, {
-            isComponent: function(el) {
-                if(el && ['UL','OL'].includes(el.tagName)) {
+            isComponent: function (el) {
+                if (el && ['UL', 'OL'].includes(el.tagName)) {
                     return {type: 'list'};
                 }
             }

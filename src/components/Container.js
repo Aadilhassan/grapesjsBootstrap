@@ -38,7 +38,7 @@ export default (domc) => {
             })
         }, {
             isComponent(el) {
-                if(el && el.classList && (el.classList.contains('container') || el.classList.contains('container-fluid'))) {
+                if (el && el.classList && (el.classList.contains('container') || el.classList.contains('container-fluid'))) {
                     return {type: 'container'};
                 }
             }

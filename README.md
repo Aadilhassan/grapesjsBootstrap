@@ -1,12 +1,6 @@
-# GrapesJS Bootstrap v4 Blocks Plugin
+# GrapesJS Bootstrap v5 Blocks Plugin
 
-[![npm](https://img.shields.io/npm/v/grapesjs-blocks-bootstrap4.svg)](https://www.npmjs.com/package/grapesjs-blocks-bootstrap4)
-
-<!--<span><a href="https://david-dm.org/z1lk/grapesjs-plugin-boilerplate#info=devDependencies" title="View the status of this project's development dependencies on DavidDM"><img src="https://img.shields.io/david/dev/artf/grapesjs-plugin-boilerplate.svg" alt="Dev Dependency Status" /></a></span>-->
-
-<!--<a rel="nofollow" href="https://app.codesponsor.io/link/nb9nPYf2XqCE1PbgcQj6gf4D/artf/grapesjs-plugin-boilerplate">
-  <img alt="Sponsor" width="888" height="68" src="https://app.codesponsor.io/embed/nb9nPYf2XqCE1PbgcQj6gf4D/artf/grapesjs-plugin-boilerplate.svg"/>
-</a>-->
+this is a fork from [github.com/kaoz70/grapesjs-blocks-bootstrap4](https://github.com/kaoz70/grapesjs-blocks-bootstrap4)
 
 ## Summary
 
@@ -56,14 +50,14 @@
 ```js
 {
   blocks: {
-    ...
-  }
+    
+  },
   blockCategories: {
-    ...
-  }
+    
+  },
   labels: {
-    ...
-  }
+    
+  },
   formPredefinedActions: null,
   optionsStringSeparator: '::'
 }
@@ -139,23 +133,17 @@ etc.
 
 ## Download
 
-<!--* CDN
-  * `https://unpkg.com/grapesjs-blocks-bootstrap4` -->
 * NPM
-  * `npm i grapesjs-blocks-bootstrap4`
+  * `npm i @minerva/grapesjs-blocks-bootstrap5`
 * GIT
-  * `git clone https://github.com/kaoz70/grapesjs-blocks-bootstrap4.git`
-
-
-
-
+  * `git clone https://gitlab.schukai.com/oss/minerva/grapesjs-blocks-bootstrap.git`
 
 ## Usage
 
 ```html
 <link href="https://unpkg.com/grapesjs/dist/css/grapes.min.css" rel="stylesheet"/>
 <script src="https://unpkg.com/grapesjs"></script>
-<script src="path/to/grapesjs-blocks-bootstrap4.min.js"></script>
+<script src="path/to/grapesjs-blocks-bootstrap5.min.js"></script>
 
 <div id="gjs"></div>
 
@@ -163,9 +151,9 @@ etc.
   var editor = grapesjs.init({
       container : '#gjs',
       ...
-      plugins: ['grapesjs-blocks-bootstrap4'],
+      plugins: ['grapesjs-blocks-bootstrap5'],
       pluginsOpts: {
-        'grapesjs-blocks-bootstrap4': {
+        'grapesjs-blocks-bootstrap5': {
           blocks: {
             // ...
           },
@@ -180,29 +168,23 @@ etc.
       },
       canvas: {
         styles: [
-          'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css'
+          'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css'
         ],
         scripts: [
-          'https://code.jquery.com/jquery-3.3.1.slim.min.js',
-          'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js',
-          'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'
+          'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js'
         ],
       }
   });
 </script>
 ```
 
-
-
-
-
 ## Development
 
 Clone the repository
 
 ```sh
-$ git clone https://github.com/kaoz70/grapesjs-blocks-bootstrap4.git
-$ cd grapesjs-blocks-bootstrap4
+$ git clone https://gitlab.schukai.com/oss/minerva/grapesjs-blocks-bootstrap.git
+$ cd grapesjs-blocks-bootstrap
 ```
 
 Install dependencies
