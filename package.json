@@ -1,8 +1,8 @@
 {
-  "name": "grapesjs-blocks-bootstrap4",
-  "version": "0.2.4",
-  "description": "GrapesJS Bootstrap v4 Blocks Plugin",
-  "main": "dist/grapesjs-blocks-bootstrap4.min.js",
+  "name": "@minerva/grapesjs-blocks-bootstrap",
+  "version": "0.1.0",
+  "description": "GrapesJS Bootstrap v5 Blocks Plugin",
+  "main": "dist/grapesjs-blocks-bootstrap5.min.js",
   "scripts": {
     "lint": "eslint src",
     "v:patch": "npm version --no-git-tag-version patch",
@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kaoz70/grapesjs-bootstrap4-blocks.git"
+    "url": "https://gitlab.schukai.com/oss/minerva/grapesjs-blocks-bootstrap"
   },
   "keywords": [
     "grapesjs",
     "plugin",
-    "bootstrap"
+    "bootstrap",
+    "bootstrap5"
   ],
-  "author": "z1lk",
   "license": "BSD-3-Clause",
   "peerDependencies": {
     "grapesjs": "0.x"
