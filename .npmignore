@@ -1,3 +1,16 @@
+webpack.config.js
+*.iml
+Makefile
+.babelrc
+.eslintrc.js
+.vimspector.json
+*.tgz
+index.html
+/scripts/
+
+#GITIGNORE-START
+
+
 .DS_Store
 private/
 node_modules/

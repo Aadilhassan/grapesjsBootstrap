@@ -38,7 +38,7 @@ export default (dc, traits, config = {}) => {
             },
         }, {
             isComponent(el) {
-                if(el.tagName === 'INPUT' && elHasClass(el, 'form-control-file')) {
+                if (el.tagName === 'INPUT' && elHasClass(el, 'form-control-file')) {
                     return {type};
                 }
             },

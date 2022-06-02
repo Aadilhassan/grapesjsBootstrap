@@ -49,7 +49,7 @@ const loadCss = editor => {
   `
 };
 
-export default grapesjs.plugins.add('grapesjs-blocks-bootstrap4', (editor, opts = {}) => {
+export default grapesjs.plugins.add('grapesjs-blocks-bootstrap5', (editor, opts = {}) => {
 
   window.editor = editor;
 
@@ -88,6 +88,7 @@ export default grapesjs.plugins.add('grapesjs-blocks-bootstrap4', (editor, opts 
     paragraph: true,
     // BASIC
     list: true,
+    list_item: true,
     // FORMS
     form: true,
     input: true,
@@ -136,6 +137,7 @@ export default grapesjs.plugins.add('grapesjs-blocks-bootstrap4', (editor, opts 
     paragraph: 'Paragraph',
     link: 'Link',
     list: 'Simple List',
+    list_item: 'Simple List Item',
 
     // FORMS
     form: 'Form',

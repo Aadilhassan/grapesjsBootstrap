@@ -4,7 +4,12 @@ export const ListBlock = (bm, label) => {
         category: 'Basic',
         attributes: {class: 'fa fa-list'},
         content: {
-            type: 'list'
+            type: 'list',
+            content: `
+<ul class="list-unstyled">
+  <li>This is a list.</li>
+</ul>
+      `,
         }
     });
 };
@@ -20,6 +25,7 @@ export default (domc) => {
                 'custom-name': 'List',
                 tagName: 'ul',
                 resizable: 1,
+                dropable: "li",
                 traits: [
                     {
                         type: 'select',

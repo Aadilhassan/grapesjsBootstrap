@@ -43,7 +43,7 @@ export default (dc, traits, config = {}) => {
     let actionTrait;
 
     // If the formPredefinedActions is set in the config you can add a dropdown menu to the actions trait
-    if(config.formPredefinedActions && config.formPredefinedActions.length) {
+    if (config.formPredefinedActions && config.formPredefinedActions.length) {
         actionTrait = {
             type: 'select',
             label: config.labels.trait_action,
@@ -65,14 +65,31 @@ export default (dc, traits, config = {}) => {
             defaults: {
                 ...defaultModel.prototype.defaults,
                 droppable: ':not(form)',
-                draggable: ':not(form)',
+                draggable: function (obj, destination) {
+
+                    if (!destination?.cid) {
+                        return false;
+                    }
+
+                    const pf =destination.closest('form')
+                    
+                    if(pf?.cid) {
+                        return false
+                    }
+                    
+                    return true;
+
+                },
                 traits: [
                     {
                         type: 'select',
                         label: config.labels.trait_enctype,
                         name: 'enctype',
                         options: [
-                            {value: 'application/x-www-form-urlencoded', name: 'application/x-www-form-urlencoded (default)'},
+                            {
+                                value: 'application/x-www-form-urlencoded',
+                                name: 'application/x-www-form-urlencoded (default)'
+                            },
                             {value: 'multipart/form-data', name: 'multipart/form-data'},
                             {value: 'text/plain', name: 'text/plain'},
                         ]
@@ -162,7 +179,7 @@ export default (dc, traits, config = {}) => {
             },
         }, {
             isComponent(el) {
-                if (el.tagName === 'FORM') {
+                if (el && el.tagName === 'FORM') {
                     return {type: 'form'};
                 }
             },

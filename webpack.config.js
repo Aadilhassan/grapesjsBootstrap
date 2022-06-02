@@ -28,7 +28,7 @@ module.exports = (env = {}) => {
 
     return {
         mode: env.production ? 'production' : 'development',
-        entry: './src',
+        entry: './source',
         output: {
             filename: `./${name}.min.js`,
             library: name,
@@ -38,7 +38,7 @@ module.exports = (env = {}) => {
             rules: [
                 {
                     test: /\.js$/,
-                    include: /src/,
+                    include: /source/,
                     use: {
                         loader: 'babel-loader',
                     }

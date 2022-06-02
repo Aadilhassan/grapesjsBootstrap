@@ -43,7 +43,7 @@ export default (dc, traits, config = {}) => {
             },
         }, {
             isComponent(el) {
-                if(el.tagName === 'INPUT') {
+                if (el.tagName === 'INPUT') {
                     return {type: 'input'};
                 }
             },
