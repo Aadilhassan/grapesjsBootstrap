@@ -42,23 +42,12 @@
 ## Options
 
 ```js
-{
-    blocks: {
-
-    }
-,
-    blockCategories: {
-
-    }
-,
-    labels: {
-
-    }
-,
+let opt = {
+    blocks: {},
+    blockCategories: {},
+    labels: {},
     formPredefinedActions: null,
-        optionsStringSeparator
-:
-    '::'
+    optionsStringSeparator: '::'
 }
 ```
 
