@@ -1,7 +1,5 @@
 # GrapesJS Bootstrap v5 Blocks Plugin
 
-this is a fork from [github.com/kaoz70/grapesjs-blocks-bootstrap4](https://github.com/kaoz70/grapesjs-blocks-bootstrap4)
-
 ## Summary
 
 * Plugin name: `grapesjs-blocks-bootstrap4`
@@ -210,4 +208,7 @@ $ npm start
 
 ## License
 
-BSD 3-Clause
+[AGPL 3.0](https://www.gnu.org/licenses/agpl-3.0.de.html)
+
+This is a fork from [github.com/kaoz70/grapesjs-blocks-bootstrap4](https://github.com/kaoz70/grapesjs-blocks-bootstrap4)
+licensed under the BSD 3-Clause License by Miguel Suarez.

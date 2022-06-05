@@ -20,7 +20,8 @@
     "bootstrap",
     "bootstrap5"
   ],
-  "license": "BSD-3-Clause",
+  "author": "schukai GmbH, Miguel Suarez",
+  "license": "AGPL 3.0",
   "peerDependencies": {
     "grapesjs": "0.x"
   },
